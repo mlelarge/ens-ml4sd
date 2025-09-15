@@ -9,8 +9,8 @@ After completing the core curriculum, each department will supervise (over a six
 **Mandatory registration [here](https://docs.google.com/forms/d/e/1FAIpQLScs--bQWrZO94LsgB5QG2txksC5G6_zuYEnO2uoDwvz5vQazQ/viewform?usp=dialog)**
 
 Logistic:
-- courses: Tuesday 4pm-6pm in room Marbo (except 30/9 in Galois)
-- practicals: Friday 8:30am-10:30am in room Langevin (except 3/10 in Borel)
+- courses: Tuesday 4pm-6pm in room Camille Marbo (29 rue d'Ulm - U205) (except 30/9 in Galois (Ulm Immeuble Rataud)
+- practicals: Friday 8:30am-10:30am in room Langevin (29 rue d'Ulm) (except 3/10 in Borel)
 
 **Prerequisites**  
 - Proficiency in Python (see [tutorial](https://cs231n.github.io/python-numpy-tutorial/) for review)  
