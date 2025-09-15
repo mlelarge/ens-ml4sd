@@ -9,7 +9,7 @@ After completing the core curriculum, each department will supervise (over a six
 **Mandatory registration [here](https://docs.google.com/forms/d/e/1FAIpQLScs--bQWrZO94LsgB5QG2txksC5G6_zuYEnO2uoDwvz5vQazQ/viewform?usp=dialog)**
 
 Logistic:
-- courses: Tuesday 4pm-5:30pm in room Marbo (except 30/9 in Galois)
+- courses: Tuesday 4pm-6pm in room Marbo (except 30/9 in Galois)
 - practicals: Friday 8:30am-10:30am in room Langevin (except 3/10 in Borel)
 
 **Prerequisites**  
