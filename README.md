@@ -17,6 +17,10 @@ Logistic:
 - Basic knowledge of calculus and linear algebra  
 - Basic knowledge of probability and statistics  
 
+## Table of Contents
+
+- [Session 1](#session-1-machine-learning-for-scientific-discovery-2025---course-overview-1609)
+
 ## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) (16/09)
 
 ### About the Course
