@@ -19,8 +19,9 @@ Logistic:
 
 ## Table of Contents
 
-- [Session 1](#session-1-machine-learning-for-scientific-discovery-2025---course-overview) (16/09)
-- [Session 2](#session-2-hypothesis-testing) (23/09)
+- [Session 1 - Course Overview](#session-1-machine-learning-for-scientific-discovery-2025---course-overview) (16/09)
+- Practicals 1 - [K-Means](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_K_Means_empty.ipynb) and [SVD](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_SVD_Eigenfaces_empty.ipynb) (19/09)
+- [Session 2 - Hypothesis Testing](#session-2-hypothesis-testing) (23/09)
 
 ## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) 
 
