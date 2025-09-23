@@ -19,9 +19,10 @@ Logistic:
 
 ## Table of Contents
 
-- [Session 1](#session-1-machine-learning-for-scientific-discovery-2025---course-overview-1609)
+- [Session 1](#session-1-machine-learning-for-scientific-discovery-2025---course-overview) (16/09)
+- [Session 2](#session-2-hypothesis-testing) (23/09)
 
-## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) (16/09)
+## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) 
 
 ### About the Course
 
@@ -95,5 +96,7 @@ The course traces AI development from philosophical foundations (Descartes, 1637
 The first lecture concludes with hands-on exploration of key statistical and machine learning concepts. **Simpson's Paradox** is demonstrated using the classic UC Berkeley admissions dataset, showing how aggregated statistics can be misleading - while overall admission rates appeared to favor men (44% vs 35% for women), departmental analysis reveals women disproportionately applied to more competitive programs, illustrating the critical importance of proper data stratification and causal reasoning. 
 
 **Clustering algorithms** are introduced through practical implementations, including **K-means clustering** with its cost function minimization (sum of squared distances to cluster centroids) and applications in image quantization for color reduction. **Hierarchical clustering** methods are covered with various linkage criteria (single, complete, average linkage), demonstrating how different distance metrics affect cluster formation. These techniques serve as concrete examples of unsupervised learning while reinforcing the theme that algorithmic tools require domain expertise for meaningful interpretation.
+
+## Session 2: [Hypothesis Testing](https://docs.google.com/presentation/d/16UhQR2w5g7DwpPop-gBkZxWz5IoyczJqAECMVGs09LQ/edit?usp=sharing) 
 
 _Note: This project was build with the help of Claude_
