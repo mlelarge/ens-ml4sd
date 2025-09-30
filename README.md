@@ -22,6 +22,7 @@ Logistic:
 - Session 1 - [Course Overview](#session-1-machine-learning-for-scientific-discovery-2025---course-overview) (16/09)
 - Practicals 1 - [K-Means](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_K_Means_empty.ipynb) and [SVD](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_SVD_Eigenfaces_empty.ipynb) (19/09)
 - Session 2 - [Hypothesis Testing](#session-2-hypothesis-testing) (23/09)
+- Session 3 - [Linear Models on Feature Vectors](#session-3-linear-models-on-feature-vectors) (30/09)
 
 ## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) 
 
@@ -99,5 +100,7 @@ The first lecture concludes with hands-on exploration of key statistical and mac
 **Clustering algorithms** are introduced through practical implementations, including **K-means clustering** with its cost function minimization (sum of squared distances to cluster centroids) and applications in image quantization for color reduction. **Hierarchical clustering** methods are covered with various linkage criteria (single, complete, average linkage), demonstrating how different distance metrics affect cluster formation. These techniques serve as concrete examples of unsupervised learning while reinforcing the theme that algorithmic tools require domain expertise for meaningful interpretation.
 
 ## Session 2: [Hypothesis Testing](https://docs.google.com/presentation/d/16UhQR2w5g7DwpPop-gBkZxWz5IoyczJqAECMVGs09LQ/edit?usp=sharing)
+
+## Session 3: [Linear Models on Feature Vectors](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session3_Linear_Models.pdf)
 
 _Note: This project was build with the help of Claude_
