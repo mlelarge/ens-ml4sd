@@ -10,7 +10,7 @@ After completing the core curriculum, each department will supervise (over a six
 
 Logistic:
 - courses: Tuesday 4pm-6pm in room Camille Marbo (29 rue d'Ulm - U205) (except 30/9 in Galois (Ulm Immeuble Rataud))
-- practicals: Friday 8:30am-10:30am in room Langevin (29 rue d'Ulm) (except 3/10 in Borel)
+- practicals: Friday 8:30am-10:30am in room Langevin (29 rue d'Ulm) (except 3/10 in Borel) or Thursday (next week) 2:00pm-4:00pm in room 316 (except 2/10 in 3324) in département de biologie (46 rue d'Ulm)
 
 **Prerequisites**  
 - Proficiency in Python (see [tutorial](https://cs231n.github.io/python-numpy-tutorial/) for review)  
@@ -20,8 +20,9 @@ Logistic:
 ## Table of Contents
 
 - Session 1 - [Course Overview](#session-1-machine-learning-for-scientific-discovery-2025---course-overview) (16/09)
-- Practicals 1 - [K-Means](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_K_Means_empty.ipynb) and [SVD](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_SVD_Eigenfaces_empty.ipynb) (19/09)
+  - Practicals 1 - [K-Means](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_K_Means_empty.ipynb) and [SVD](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_SVD_Eigenfaces_empty.ipynb) (19/09)
 - Session 2 - [Hypothesis Testing](#session-2-hypothesis-testing) (23/09)
+  - Practicals 2 - [Supervised Learning](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/2_Supervised_Learning_empty.ipynb) (26/09 - 02/10)
 - Session 3 - [Linear Models on Feature Vectors](#session-3-linear-models-on-feature-vectors) (30/09)
 
 ## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) 
