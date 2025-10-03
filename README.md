@@ -24,6 +24,7 @@ Logistic:
 - Session 2 - [Hypothesis Testing](#session-2-hypothesis-testing) (23/09)
   - Practicals 2 - [Supervised Learning](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/2_Supervised_Learning_empty.ipynb) (26/09 - 02/10)
 - Session 3 - [Linear Models on Feature Vectors](#session-3-linear-models-on-feature-vectors) (30/09)
+  - Practicals 3 - [Bayes' Theorem](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Bayes_empty.ipynb) - [Naive Bayes Binary Classifier](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_NaiveBayes_empty.ipynb) - [Logistic Regression from Scratch](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Logistic_Reg_empty.ipynb) (03/10 - 09/10)
 
 ## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) 
 
