@@ -1,0 +1,15 @@
+title: "Machine Learning for Scientific Discovery"
+description: "ENS course materials"
+
+# Theme (optional)
+theme: minima
+# OR remote_theme: pages-themes/minimal@v0.2.0
+
+# Navigation (optional)
+header_pages:
+  - 4_optimization.md
+  
+# Math support
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
