@@ -6,8 +6,8 @@ theme: minima
 
 # Navigation
 header_pages:
+  - 1_intro.md
   - 4_optimization.md
-  - test-math.md
   
 # Math support with kramdown
 markdown: kramdown

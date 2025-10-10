@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "From Supervised Learning to Optimization"
+title: "Session 4: From Supervised Learning to Optimization"
 ---
 
 ## Setting
@@ -114,20 +114,20 @@ We now derive the gradient for binary logistic regression with 2 features as a c
 For a single training example $(\mathbf{x}, y)$ where
 
 $$
-\mathbf{x} = \begin{bmatrix}x\_{1}\\ x\_{2}\end{bmatrix}, \qquad y \in \{0,1\},
+\mathbf{x} = \begin{bmatrix}x_{1}\\ x_{2}\end{bmatrix}, \qquad y \in \{0,1\},
 $$
 
 the **logistic (sigmoid) function** gives the predicted probability of the positive class:
 
 $$
-\hat{p} = P(y=1 \mid \mathbf{x}) = \sigma(z), \qquad z = w\_{0} + w\_{1}x\_{1} + w\_{2}x\_{2}
+\hat{p} = P(y=1 \mid \mathbf{x}) = \sigma(z), \qquad z = w_{0} + w_{1}x_{1} + w_{2}x_{2}
 $$
 
 $$
 \sigma(z) = \frac{1}{1 + e^{-z}}
 $$
 
-Here, $w\_{0}$ is the intercept (bias), and $w\_{1}, w\_{2}$ are the weights for the two features.
+Here, $w_{0}$ is the intercept (bias), and $w_{1}, w_{2}$ are the weights for the two features.
 
 The parameter vector is $\mathbf{w} = [w_0, w_1, w_2]^T \in \mathbb{R}^3$.
 
@@ -185,61 +185,61 @@ $$
 
 ### 5. Gradient w.r.t. Each Weight
 
-Because $z = w\_{0} + w\_{1}x\_{1} + w\_{2}x\_{2}$, we have:
+Because $z = w_{0} + w_{1}x_{1} + w_{2}x_{2}$, we have:
 
 $$
-\frac{\partial z}{\partial w\_{0}} = 1, \qquad \frac{\partial z}{\partial w\_{1}} = x\_{1}, \qquad \frac{\partial z}{\partial w\_{2}} = x\_{2}
+\frac{\partial z}{\partial w_{0}} = 1, \qquad \frac{\partial z}{\partial w_{1}} = x_{1}, \qquad \frac{\partial z}{\partial w_{2}} = x_{2}
 $$
 
 Applying the chain rule $\displaystyle\frac{\partial \ell}{\partial w_j} = \frac{\partial \ell}{\partial z}\frac{\partial z}{\partial w_j}$:
 
 | Parameter | Gradient |
 |:----------|:---------|
-| $w\_{0}$ (bias) | $\displaystyle \frac{\partial \ell}{\partial w\_{0}} = (\hat{p} - y)$ |
-| $w\_{1}$ | $\displaystyle \frac{\partial \ell}{\partial w\_{1}} = (\hat{p} - y)\,x\_{1}$ |
-| $w\_{2}$ | $\displaystyle \frac{\partial \ell}{\partial w\_{2}} = (\hat{p} - y)\,x\_{2}$ |
+| $w_{0}$ (bias) | $\displaystyle \frac{\partial \ell}{\partial w_{0}} = (\hat{p} - y)$ |
+| $w_{1}$ | $\displaystyle \frac{\partial \ell}{\partial w_{1}} = (\hat{p} - y)\,x_{1}$ |
+| $w_{2}$ | $\displaystyle \frac{\partial \ell}{\partial w_{2}} = (\hat{p} - y)\,x_{2}$ |
 
 In vector form:
 
 $$
-\nabla\_{\mathbf{w}} \ell(\mathbf{w}) = (\hat{p} - y) \begin{bmatrix} 1\\ x\_{1}\\ x\_{2} \end{bmatrix}
+\nabla_{\mathbf{w}} \ell(\mathbf{w}) = (\hat{p} - y) \begin{bmatrix} 1\\ x_{1}\\ x_{2} \end{bmatrix}
 $$
 
 ---
 
 ### 6. Gradient for the Entire Dataset
 
-For $n$ i.i.d. training examples $\{(\mathbf{x}^{(i)}, y^{(i)})\}\_{i=1}^{n}$, the objective function (average loss) is:
+For $n$ i.i.d. training examples $\{(\mathbf{x}^{(i)}, y^{(i)})\}_{i=1}^{n}$, the objective function (average loss) is:
 
 $$
-\Phi(\mathbf{w}) = L(\mathbf{w}) = \frac{1}{n}\sum\_{i=1}^{n}\ell^{(i)}(\mathbf{w})
+\Phi(\mathbf{w}) = L(\mathbf{w}) = \frac{1}{n}\sum_{i=1}^{n}\ell^{(i)}(\mathbf{w})
 $$
 
 Its gradient is:
 
 $$
-\boxed{\nabla\_{\mathbf{w}} \Phi(\mathbf{w}) = \frac{1}{n}\sum\_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) \begin{bmatrix} 1\\ x^{(i)}\_{1}\\ x^{(i)}\_{2} \end{bmatrix}}
+\boxed{\nabla_{\mathbf{w}} \Phi(\mathbf{w}) = \frac{1}{n}\sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) \begin{bmatrix} 1\\ x^{(i)}_{1}\\ x^{(i)}_{2} \end{bmatrix}}
 $$
 
 Or component-wise:
 
 $$
-\frac{\partial \Phi}{\partial w\_{j}} = \frac{1}{n}\sum\_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) \, x^{(i)}\_{j}
+\frac{\partial \Phi}{\partial w_{j}} = \frac{1}{n}\sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) \, x^{(i)}_{j}
 $$
 
-where $x^{(i)}\_{0} = 1$ (for the intercept) and $j \in \{0, 1, 2\}$.
+where $x^{(i)}_{0} = 1$ (for the intercept) and $j \in \{0, 1, 2\}$.
 
 ---
 
 ### 7. Summary of the Derivation
 
-1. **Model**: $z = w\_{0} + w\_{1}x\_{1} + w\_{2}x\_{2}$, $\hat{p} = \sigma(z)$
+1. **Model**: $z = w_{0} + w_{1}x_{1} + w_{2}x_{2}$, $\hat{p} = \sigma(z)$
 2. **Loss**: Binary cross-entropy $\ell = -[y\log\hat{p} + (1-y)\log(1-\hat{p})]$
 3. **Key result**: $\partial\ell/\partial z = \hat{p} - y$
-4. **Chain rule**: Apply to each weight using $\partial z/\partial w\_j$
-5. **Final gradient**: $\nabla\_{\mathbf{w}}\ell = (\hat{p} - y)[1,\,x\_{1},\,x\_{2}]^{\top}$
+4. **Chain rule**: Apply to each weight using $\partial z/\partial w_j$
+5. **Final gradient**: $\nabla_{\mathbf{w}}\ell = (\hat{p} - y)[1,\,x_{1},\,x_{2}]^{\top}$
 
-These gradients are used in **gradient descent** (or more advanced optimizers) to iteratively update and learn the optimal parameters $w\_{0}, w\_{1}, w\_{2}$ that minimize the empirical risk.
+These gradients are used in **gradient descent** (or more advanced optimizers) to iteratively update and learn the optimal parameters $w_{0}, w_{1}, w_{2}$ that minimize the empirical risk.
 
 ---
 
