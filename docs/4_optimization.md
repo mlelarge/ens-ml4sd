@@ -1,3 +1,8 @@
+---
+layout: page
+title: "From Supervised Learning to Optimization"
+---
+
 # From Supervised Learning to Optimization
 
 ## Setting
