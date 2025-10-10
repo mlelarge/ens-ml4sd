@@ -3,8 +3,6 @@ layout: page
 title: "From Supervised Learning to Optimization"
 ---
 
-# From Supervised Learning to Optimization
-
 ## Setting
 
 We have $n$ labeled instances $(x^{(1)}, y^{(1)}), \ldots, (x^{(n)}, y^{(n)})$ that are **independent and identically distributed (i.i.d.)** according to a distribution $(X, Y)$.
@@ -109,7 +107,7 @@ We now derive the gradient for binary logistic regression with 2 features as a c
 
 ---
 
-## Derivation of the Gradient for Binary Logistic Regression (2 Features)
+## Derivation of the Gradient for Binary Logistic Regression
 
 ### 1. Model Specification
 
@@ -122,11 +120,11 @@ $$
 the **logistic (sigmoid) function** gives the predicted probability of the positive class:
 
 $$
-\hat{p} = P(y=1 \mid \mathbf{x}) = \sigma(z), \qquad z = w_{0} + w_{1}x_{1} + w_{2}x_{2},
+\hat{p} = P(y=1 \mid \mathbf{x}) = \sigma(z), \qquad z = w_{0} + w_{1}x_{1} + w_{2}x_{2}
 $$
 
 $$
-\sigma(z) = \frac{1}{1 + e^{-z}}.
+\sigma(z) = \frac{1}{1 + e^{-z}}
 $$
 
 Here, $w_{0}$ is the intercept (bias), and $w_{1}, w_{2}$ are the weights for the two features.
@@ -140,13 +138,13 @@ The parameter vector is $\mathbf{w} = [w_0, w_1, w_2]^T \in \mathbb{R}^3$.
 For one observation, the **negative log-likelihood** (binary cross-entropy) is
 
 $$
-\ell(\mathbf{w}) = -\Big[ y\log(\hat{p}) + (1-y)\log(1-\hat{p})\Big].
+\ell(\mathbf{w}) = -\left[ y\log(\hat{p}) + (1-y)\log(1-\hat{p})\right]
 $$
 
 Substituting $\hat{p} = \sigma(z)$ gives
 
 $$
-\ell(\mathbf{w}) = -\big[ y\log\sigma(z) + (1-y)\log(1-\sigma(z))\big].
+\ell(\mathbf{w}) = -\left[ y\log\sigma(z) + (1-y)\log(1-\sigma(z))\right]
 $$
 
 This is our objective function $\Phi(\mathbf{w})$ for a single example.
@@ -156,19 +154,25 @@ This is our objective function $\Phi(\mathbf{w})$ for a single example.
 ### 3. Useful Derivative of the Sigmoid
 
 $$
-\frac{d\sigma(z)}{dz} = \sigma(z)\bigl(1 - \sigma(z)\bigr).
+\frac{d\sigma(z)}{dz} = \sigma(z)(1 - \sigma(z))
 $$
 
 ---
 
 ### 4. Derivative of the Loss w.r.t. the Linear Predictor $z$
 
+We compute:
+
 $$
-\begin{align}
-\frac{\partial \ell}{\partial z} &= -\Big[ y\frac{1}{\sigma(z)}\frac{d\sigma(z)}{dz} + (1-y)\frac{1}{1-\sigma(z)}\big(-\frac{d\sigma(z)}{dz}\big) \Big] \\
-&= -\Big[ y(1-\sigma(z)) - (1-y)\sigma(z) \Big] \\
-&= \sigma(z) - y = \hat{p} - y.
-\end{align}
+\frac{\partial \ell}{\partial z} = -\left[ y\frac{1}{\sigma(z)}\frac{d\sigma(z)}{dz} + (1-y)\frac{1}{1-\sigma(z)}\left(-\frac{d\sigma(z)}{dz}\right) \right]
+$$
+
+$$
+= -\left[ y(1-\sigma(z)) - (1-y)\sigma(z) \right]
+$$
+
+$$
+= \sigma(z) - y = \hat{p} - y
 $$
 
 Therefore:
@@ -184,15 +188,13 @@ $$
 Because $z = w_{0} + w_{1}x_{1} + w_{2}x_{2}$, we have:
 
 $$
-\frac{\partial z}{\partial w_{0}} = 1, \qquad
-\frac{\partial z}{\partial w_{1}} = x_{1}, \qquad
-\frac{\partial z}{\partial w_{2}} = x_{2}.
+\frac{\partial z}{\partial w_{0}} = 1, \qquad \frac{\partial z}{\partial w_{1}} = x_{1}, \qquad \frac{\partial z}{\partial w_{2}} = x_{2}
 $$
 
 Applying the chain rule $\displaystyle\frac{\partial \ell}{\partial w_j} = \frac{\partial \ell}{\partial z}\frac{\partial z}{\partial w_j}$:
 
 | Parameter | Gradient |
-|-----------|----------|
+|:----------|:---------|
 | $w_{0}$ (bias) | $\displaystyle \frac{\partial \ell}{\partial w_{0}} = (\hat{p} - y)$ |
 | $w_{1}$ | $\displaystyle \frac{\partial \ell}{\partial w_{1}} = (\hat{p} - y)\,x_{1}$ |
 | $w_{2}$ | $\displaystyle \frac{\partial \ell}{\partial w_{2}} = (\hat{p} - y)\,x_{2}$ |
@@ -200,7 +202,7 @@ Applying the chain rule $\displaystyle\frac{\partial \ell}{\partial w_j} = \frac
 In vector form:
 
 $$
-\nabla_{\mathbf{w}} \ell(\mathbf{w}) = (\hat{p} - y) \begin{bmatrix} 1\\ x_{1}\\ x_{2} \end{bmatrix}.
+\nabla_{\mathbf{w}} \ell(\mathbf{w}) = (\hat{p} - y) \begin{bmatrix} 1\\ x_{1}\\ x_{2} \end{bmatrix}
 $$
 
 ---
@@ -210,19 +212,19 @@ $$
 For $n$ i.i.d. training examples $\{(\mathbf{x}^{(i)}, y^{(i)})\}_{i=1}^{n}$, the objective function (average loss) is:
 
 $$
-\Phi(\mathbf{w}) = L(\mathbf{w}) = \frac{1}{n}\sum_{i=1}^{n}\ell^{(i)}(\mathbf{w}).
+\Phi(\mathbf{w}) = L(\mathbf{w}) = \frac{1}{n}\sum_{i=1}^{n}\ell^{(i)}(\mathbf{w})
 $$
 
 Its gradient is:
 
 $$
-\boxed{\nabla_{\mathbf{w}} \Phi(\mathbf{w}) = \frac{1}{n}\sum_{i=1}^{n} \big(\hat{p}^{(i)} - y^{(i)}\big) \begin{bmatrix} 1\\ x^{(i)}_{1}\\ x^{(i)}_{2} \end{bmatrix}}
+\boxed{\nabla_{\mathbf{w}} \Phi(\mathbf{w}) = \frac{1}{n}\sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) \begin{bmatrix} 1\\ x^{(i)}_{1}\\ x^{(i)}_{2} \end{bmatrix}}
 $$
 
 Or component-wise:
 
 $$
-\frac{\partial \Phi}{\partial w_{j}} = \frac{1}{n}\sum_{i=1}^{n} \big(\hat{p}^{(i)} - y^{(i)}\big) \, x^{(i)}_{j}
+\frac{\partial \Phi}{\partial w_{j}} = \frac{1}{n}\sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) \, x^{(i)}_{j}
 $$
 
 where $x^{(i)}_{0} = 1$ (for the intercept) and $j \in \{0, 1, 2\}$.
@@ -232,14 +234,10 @@ where $x^{(i)}_{0} = 1$ (for the intercept) and $j \in \{0, 1, 2\}$.
 ### 7. Summary of the Derivation
 
 1. **Model**: $z = w_{0} + w_{1}x_{1} + w_{2}x_{2}$, $\hat{p} = \sigma(z)$
-
 2. **Loss**: Binary cross-entropy $\ell = -[y\log\hat{p} + (1-y)\log(1-\hat{p})]$
-
 3. **Key result**: $\partial\ell/\partial z = \hat{p} - y$
-
 4. **Chain rule**: Apply to each weight using $\partial z/\partial w_j$
-
-5. **Final gradient**: $\nabla_{\mathbf{w}}\ell = (\hat{p} - y)[1,\,x_{1},\,x_{2}]^{\!\top}$
+5. **Final gradient**: $\nabla_{\mathbf{w}}\ell = (\hat{p} - y)[1,\,x_{1},\,x_{2}]^{\top}$
 
 These gradients are used in **gradient descent** (or more advanced optimizers) to iteratively update and learn the optimal parameters $w_{0}, w_{1}, w_{2}$ that minimize the empirical risk.
 
@@ -266,6 +264,8 @@ where:
 - $\alpha_t > 0$ is the **step size** (or learning rate) at iteration $t$
 - $\nabla_{\mathbf{w}} \Phi(\mathbf{w}^{(t)})$ is the gradient evaluated at $\mathbf{w}^{(t)}$
 
+---
+
 ### Algorithm: Batch Gradient Descent
 
 **Input:** Training data $\{(\mathbf{x}^{(i)}, y^{(i)})\}_{i=1}^{n}$, step size sequence $\{\alpha_t\}_{t=0}^{T-1}$, number of iterations $T$
@@ -275,11 +275,13 @@ where:
 **For** $t = 0, 1, 2, \ldots, T-1$:
 
 1. Compute the gradient over the entire dataset:
+
    $$
    \nabla_{\mathbf{w}} \Phi(\mathbf{w}^{(t)}) = \frac{1}{n}\sum_{i=1}^{n} \nabla_{\mathbf{w}} \ell^{(i)}(\mathbf{w}^{(t)})
    $$
 
 2. Update the parameters:
+
    $$
    \mathbf{w}^{(t+1)} = \mathbf{w}^{(t)} - \alpha_t \nabla_{\mathbf{w}} \Phi(\mathbf{w}^{(t)})
    $$
@@ -293,17 +295,21 @@ where:
 For binary logistic regression with 2 features, the update becomes:
 
 $$
-\mathbf{w}^{(t+1)} = \mathbf{w}^{(t)} - \frac{\alpha_t}{n} \sum_{i=1}^{n} \big(\hat{p}^{(i)} - y^{(i)}\big) \begin{bmatrix} 1\\ x^{(i)}_{1}\\ x^{(i)}_{2} \end{bmatrix}
+\mathbf{w}^{(t+1)} = \mathbf{w}^{(t)} - \frac{\alpha_t}{n} \sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) \begin{bmatrix} 1\\ x^{(i)}_{1}\\ x^{(i)}_{2} \end{bmatrix}
 $$
 
 Or component-wise:
 
 $$
-\begin{align}
-w_0^{(t+1)} &= w_0^{(t)} - \frac{\alpha_t}{n} \sum_{i=1}^{n} \big(\hat{p}^{(i)} - y^{(i)}\big) \\
-w_1^{(t+1)} &= w_1^{(t)} - \frac{\alpha_t}{n} \sum_{i=1}^{n} \big(\hat{p}^{(i)} - y^{(i)}\big) x^{(i)}_{1} \\
-w_2^{(t+1)} &= w_2^{(t)} - \frac{\alpha_t}{n} \sum_{i=1}^{n} \big(\hat{p}^{(i)} - y^{(i)}\big) x^{(i)}_{2}
-\end{align}
+w_0^{(t+1)} = w_0^{(t)} - \frac{\alpha_t}{n} \sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)})
+$$
+
+$$
+w_1^{(t+1)} = w_1^{(t)} - \frac{\alpha_t}{n} \sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) x^{(i)}_{1}
+$$
+
+$$
+w_2^{(t+1)} = w_2^{(t)} - \frac{\alpha_t}{n} \sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) x^{(i)}_{2}
 $$
 
 ---
@@ -318,15 +324,24 @@ The step size $\alpha_t$ is a crucial hyperparameter that can vary with iteratio
 
 **Common strategies:**
 
-1. **Constant step size**: $\alpha_t = \alpha$ for all $t$
+**1. Constant step size:** $\alpha_t = \alpha$ for all $t$
    - Simple but may not be optimal
 
-2. **Diminishing step size**: $\alpha_t$ decreases over time
+**2. Diminishing step size:** $\alpha_t$ decreases over time
    - Example: $\alpha_t = \frac{\alpha_0}{1 + t}$ or $\alpha_t = \frac{\alpha_0}{\sqrt{t+1}}$
    - Ensures convergence for convex problems under certain conditions
 
-3. **Exponential decay**: $\alpha_t = \alpha_0 \cdot \gamma^t$ where $0 < \gamma < 1$
+**3. Exponential decay:** $\alpha_t = \alpha_0 \cdot \gamma^t$ where $0 < \gamma < 1$
    - Common in practice (e.g., $\gamma = 0.95$ or $0.99$)
+
+**4. Step decay:** Reduce $\alpha_t$ by a factor every few epochs
+   - Example: $\alpha_t = \alpha_0 \cdot 0.5^{\lfloor t/k \rfloor}$ where $k$ is the decay interval
+
+**5. Line search:** Choose $\alpha_t$ at each iteration to minimize $\Phi(\mathbf{w}^{(t)} - \alpha_t \nabla_{\mathbf{w}} \Phi(\mathbf{w}^{(t)}))$
+   - More computationally expensive but can be more efficient
+
+**6. Adaptive methods:** Adjust $\alpha_t$ based on gradient history
+   - Examples: AdaGrad, RMSprop, Adam
 
 ---
 
@@ -335,48 +350,54 @@ The step size $\alpha_t$ is a crucial hyperparameter that can vary with iteratio
 Gradient descent continues until one of the following conditions is met:
 
 1. **Maximum iterations**: $t \geq T$
-2. **Gradient magnitude**: $\|\nabla_{\mathbf{w}} \Phi(\mathbf{w}^{(t)})\| < \epsilon$ for some small threshold $\epsilon > 0$
-3. **Function value change**: $|\Phi(\mathbf{w}^{(t+1)}) - \Phi(\mathbf{w}^{(t)})| < \epsilon$
-4. **Parameter change**: $\|\mathbf{w}^{(t+1)} - \mathbf{w}^{(t)}\| < \epsilon$
+2. **Gradient magnitude**: $\lVert\nabla_{\mathbf{w}} \Phi(\mathbf{w}^{(t)})\rVert < \epsilon$ for some small threshold $\epsilon > 0$
+3. **Function value change**: $\lvert\Phi(\mathbf{w}^{(t+1)}) - \Phi(\mathbf{w}^{(t)})\rvert < \epsilon$
+4. **Parameter change**: $\lVert\mathbf{w}^{(t+1)} - \mathbf{w}^{(t)}\rVert < \epsilon$
 
 ---
 
 ### Variants of Gradient Descent
 
 #### 1. Batch Gradient Descent (Standard GD)
-- Uses **all** $n$ training examples to compute the gradient at each iteration
-- Pros: Stable convergence, accurate gradient
-- Cons: Slow for large datasets (requires full pass through data)
+
+Uses **all** $n$ training examples to compute the gradient at each iteration.
 
 $$
 \nabla_{\mathbf{w}} \Phi(\mathbf{w}) = \frac{1}{n}\sum_{i=1}^{n} \nabla_{\mathbf{w}} \ell^{(i)}(\mathbf{w})
 $$
 
+- **Pros**: Stable convergence, accurate gradient
+- **Cons**: Slow for large datasets (requires full pass through data)
+
 #### 2. Stochastic Gradient Descent (SGD)
-- Uses **one** randomly selected training example at each iteration
-- Update rule:
+
+Uses **one** randomly selected training example at each iteration.
+
+Update rule:
 
 $$
 \mathbf{w}^{(t+1)} = \mathbf{w}^{(t)} - \alpha_t \nabla_{\mathbf{w}} \ell^{(i_t)}(\mathbf{w}^{(t)})
 $$
 
-where $i_t$ is randomly sampled from $\{1, \ldots, n\}$
+where $i_t$ is randomly sampled from $\{1, \ldots, n\}$.
 
-- Pros: Much faster per iteration, can escape local minima
-- Cons: Noisy updates, requires careful step size tuning
+- **Pros**: Much faster per iteration, can escape local minima
+- **Cons**: Noisy updates, requires careful step size tuning
 
 #### 3. Mini-Batch Gradient Descent
-- Uses a **subset** (mini-batch) of $b$ examples at each iteration
-- Update rule:
+
+Uses a **subset** (mini-batch) of $b$ examples at each iteration.
+
+Update rule:
 
 $$
 \mathbf{w}^{(t+1)} = \mathbf{w}^{(t)} - \frac{\alpha_t}{b} \sum_{i \in \mathcal{B}_t} \nabla_{\mathbf{w}} \ell^{(i)}(\mathbf{w}^{(t)})
 $$
 
-where $\mathcal{B}_t$ is a mini-batch of size $b$ (typically 32, 64, 128, or 256)
+where $\mathcal{B}_t$ is a mini-batch of size $b$ (typically 32, 64, 128, or 256).
 
-- Pros: Balance between computational efficiency and gradient accuracy, can leverage parallel computation
-- Cons: One more hyperparameter (batch size)
+- **Pros**: Balance between computational efficiency and gradient accuracy, can leverage parallel computation
+- **Cons**: One more hyperparameter (batch size)
 
 **Mini-batch GD is the most commonly used variant in practice**, especially for training neural networks.
 
@@ -384,11 +405,11 @@ where $\mathcal{B}_t$ is a mini-batch of size $b$ (typically 32, 64, 128, or 256
 
 ### Convergence Properties
 
-For **convex** functions $\Phi$ (like logistic regression):
+**For convex functions** $\Phi$ (like logistic regression):
 - Gradient descent with appropriate step size sequence is guaranteed to converge to the global minimum
 - Convergence rate: $O(1/T)$ for smooth functions with proper step size choice
 - Typical requirement: $\sum_{t=0}^{\infty} \alpha_t = \infty$ and $\sum_{t=0}^{\infty} \alpha_t^2 < \infty$ (e.g., $\alpha_t = \frac{1}{t+1}$)
 
-For **non-convex** functions (like neural networks):
+**For non-convex functions** (like neural networks):
 - Gradient descent can only guarantee convergence to a local minimum or saddle point
 - In practice, local minima found by GD often work well for machine learning tasks
