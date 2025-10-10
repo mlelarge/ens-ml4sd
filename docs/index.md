@@ -9,8 +9,7 @@ layout: default
 
 ## Sessions
 
-
 - Session 4:  [Optimization](4_optimization)  
-
+- [Math Test](test-math) - Test page for math rendering
 
 ## Practicals

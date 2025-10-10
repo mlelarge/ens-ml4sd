@@ -40,7 +40,7 @@ $$
 Since we don't have access to the true distribution $(X, Y)$, we only have samples. Therefore, we define the **empirical risk**:
 
 $$
-R\_S[f] = \frac{1}{n}\sum\_{i=1}^{n} \text{loss}(f(x\_i), y\_i)
+R_S[f] = \frac{1}{n}\sum_{i=1}^{n} \text{loss}(f(x_i), y_i)
 $$
 
 ### Step 4: Empirical Risk Minimization (ERM)
@@ -48,7 +48,7 @@ $$
 The optimization problem becomes:
 
 $$
-\min\_{f \in \mathcal{F}} R\_S[f]
+\min_{f \in \mathcal{F}} R_S[f]
 $$
 
 where $\mathcal{F}$ is a hypothesis class (class of functions).
@@ -66,7 +66,7 @@ where $\mathcal{F}$ is a hypothesis class (class of functions).
 The relationship between true risk and empirical risk is:
 
 $$
-R[f] = R\_S[f] + \underbrace{R[f] - R\_S[f]}\_{\text{generalization gap}}
+R[f] = R_S[f] + \underbrace{R[f] - R_S[f]}_{\text{generalization gap}}
 $$
 
 The **generalization gap** measures how well the model performs on unseen data compared to the training data. A small generalization gap indicates good generalization.
@@ -90,7 +90,7 @@ When solving machine learning problems, we face three interconnected challenges:
 The general optimization problem is:
 
 $$
-\min\_{w \in \mathbb{R}^d} \Phi(w)
+\min_{w \in \mathbb{R}^d} \Phi(w)
 $$
 
 where $\Phi: \mathbb{R}^d \to \mathbb{R}$ is the objective function.
@@ -98,7 +98,7 @@ where $\Phi: \mathbb{R}^d \to \mathbb{R}$ is the objective function.
 In the context of ERM, if we parameterize our hypothesis class $\mathcal{F}$ by weights $w$, then:
 
 $$
-\Phi(w) = R\_S[f\_w] = \frac{1}{n}\sum\_{i=1}^{n} \text{loss}(f\_w(x\_i), y\_i)
+\Phi(w) = R_S[f_w] = \frac{1}{n}\sum_{i=1}^{n} \text{loss}(f_w(x_i), y_i)
 $$
 
 ### Example: Binary Logistic Regression
