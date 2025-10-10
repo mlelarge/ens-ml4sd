@@ -40,7 +40,7 @@ $$
 Since we don't have access to the true distribution $(X, Y)$, we only have samples. Therefore, we define the **empirical risk**:
 
 $$
-R_S[f] = \frac{1}{n}\sum_{i=1}^{n} \text{loss}(f(x_i), y_i)
+R\_S[f] = \frac{1}{n}\sum\_{i=1}^{n} \text{loss}(f(x\_i), y\_i)
 $$
 
 ### Step 4: Empirical Risk Minimization (ERM)
@@ -48,7 +48,7 @@ $$
 The optimization problem becomes:
 
 $$
-\min_{f \in \mathcal{F}} R_S[f]
+\min\_{f \in \mathcal{F}} R\_S[f]
 $$
 
 where $\mathcal{F}$ is a hypothesis class (class of functions).
@@ -66,7 +66,7 @@ where $\mathcal{F}$ is a hypothesis class (class of functions).
 The relationship between true risk and empirical risk is:
 
 $$
-R[f] = R_S[f] + \underbrace{R[f] - R_S[f]}_{\text{generalization gap}}
+R[f] = R\_S[f] + \underbrace{R[f] - R\_S[f]}\_{\text{generalization gap}}
 $$
 
 The **generalization gap** measures how well the model performs on unseen data compared to the training data. A small generalization gap indicates good generalization.
@@ -90,7 +90,7 @@ When solving machine learning problems, we face three interconnected challenges:
 The general optimization problem is:
 
 $$
-\min_{w \in \mathbb{R}^d} \Phi(w)
+\min\_{w \in \mathbb{R}^d} \Phi(w)
 $$
 
 where $\Phi: \mathbb{R}^d \to \mathbb{R}$ is the objective function.
@@ -98,7 +98,7 @@ where $\Phi: \mathbb{R}^d \to \mathbb{R}$ is the objective function.
 In the context of ERM, if we parameterize our hypothesis class $\mathcal{F}$ by weights $w$, then:
 
 $$
-\Phi(w) = R_S[f_w] = \frac{1}{n}\sum_{i=1}^{n} \text{loss}(f_w(x_i), y_i)
+\Phi(w) = R\_S[f\_w] = \frac{1}{n}\sum\_{i=1}^{n} \text{loss}(f\_w(x\_i), y\_i)
 $$
 
 ### Example: Binary Logistic Regression
@@ -114,20 +114,20 @@ We now derive the gradient for binary logistic regression with 2 features as a c
 For a single training example $(\mathbf{x}, y)$ where
 
 $$
-\mathbf{x} = \begin{bmatrix}x_{1}\\ x_{2}\end{bmatrix}, \qquad y \in \{0,1\},
+\mathbf{x} = \begin{bmatrix}x\_{1}\\ x\_{2}\end{bmatrix}, \qquad y \in \{0,1\},
 $$
 
 the **logistic (sigmoid) function** gives the predicted probability of the positive class:
 
 $$
-\hat{p} = P(y=1 \mid \mathbf{x}) = \sigma(z), \qquad z = w_{0} + w_{1}x_{1} + w_{2}x_{2}
+\hat{p} = P(y=1 \mid \mathbf{x}) = \sigma(z), \qquad z = w\_{0} + w\_{1}x\_{1} + w\_{2}x\_{2}
 $$
 
 $$
 \sigma(z) = \frac{1}{1 + e^{-z}}
 $$
 
-Here, $w_{0}$ is the intercept (bias), and $w_{1}, w_{2}$ are the weights for the two features.
+Here, $w\_{0}$ is the intercept (bias), and $w\_{1}, w\_{2}$ are the weights for the two features.
 
 The parameter vector is $\mathbf{w} = [w_0, w_1, w_2]^T \in \mathbb{R}^3$.
 
@@ -185,61 +185,61 @@ $$
 
 ### 5. Gradient w.r.t. Each Weight
 
-Because $z = w_{0} + w_{1}x_{1} + w_{2}x_{2}$, we have:
+Because $z = w\_{0} + w\_{1}x\_{1} + w\_{2}x\_{2}$, we have:
 
 $$
-\frac{\partial z}{\partial w_{0}} = 1, \qquad \frac{\partial z}{\partial w_{1}} = x_{1}, \qquad \frac{\partial z}{\partial w_{2}} = x_{2}
+\frac{\partial z}{\partial w\_{0}} = 1, \qquad \frac{\partial z}{\partial w\_{1}} = x\_{1}, \qquad \frac{\partial z}{\partial w\_{2}} = x\_{2}
 $$
 
 Applying the chain rule $\displaystyle\frac{\partial \ell}{\partial w_j} = \frac{\partial \ell}{\partial z}\frac{\partial z}{\partial w_j}$:
 
 | Parameter | Gradient |
 |:----------|:---------|
-| $w_{0}$ (bias) | $\displaystyle \frac{\partial \ell}{\partial w_{0}} = (\hat{p} - y)$ |
-| $w_{1}$ | $\displaystyle \frac{\partial \ell}{\partial w_{1}} = (\hat{p} - y)\,x_{1}$ |
-| $w_{2}$ | $\displaystyle \frac{\partial \ell}{\partial w_{2}} = (\hat{p} - y)\,x_{2}$ |
+| $w\_{0}$ (bias) | $\displaystyle \frac{\partial \ell}{\partial w\_{0}} = (\hat{p} - y)$ |
+| $w\_{1}$ | $\displaystyle \frac{\partial \ell}{\partial w\_{1}} = (\hat{p} - y)\,x\_{1}$ |
+| $w\_{2}$ | $\displaystyle \frac{\partial \ell}{\partial w\_{2}} = (\hat{p} - y)\,x\_{2}$ |
 
 In vector form:
 
 $$
-\nabla_{\mathbf{w}} \ell(\mathbf{w}) = (\hat{p} - y) \begin{bmatrix} 1\\ x_{1}\\ x_{2} \end{bmatrix}
+\nabla\_{\mathbf{w}} \ell(\mathbf{w}) = (\hat{p} - y) \begin{bmatrix} 1\\ x\_{1}\\ x\_{2} \end{bmatrix}
 $$
 
 ---
 
 ### 6. Gradient for the Entire Dataset
 
-For $n$ i.i.d. training examples $\{(\mathbf{x}^{(i)}, y^{(i)})\}_{i=1}^{n}$, the objective function (average loss) is:
+For $n$ i.i.d. training examples $\{(\mathbf{x}^{(i)}, y^{(i)})\}\_{i=1}^{n}$, the objective function (average loss) is:
 
 $$
-\Phi(\mathbf{w}) = L(\mathbf{w}) = \frac{1}{n}\sum_{i=1}^{n}\ell^{(i)}(\mathbf{w})
+\Phi(\mathbf{w}) = L(\mathbf{w}) = \frac{1}{n}\sum\_{i=1}^{n}\ell^{(i)}(\mathbf{w})
 $$
 
 Its gradient is:
 
 $$
-\boxed{\nabla_{\mathbf{w}} \Phi(\mathbf{w}) = \frac{1}{n}\sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) \begin{bmatrix} 1\\ x^{(i)}_{1}\\ x^{(i)}_{2} \end{bmatrix}}
+\boxed{\nabla\_{\mathbf{w}} \Phi(\mathbf{w}) = \frac{1}{n}\sum\_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) \begin{bmatrix} 1\\ x^{(i)}\_{1}\\ x^{(i)}\_{2} \end{bmatrix}}
 $$
 
 Or component-wise:
 
 $$
-\frac{\partial \Phi}{\partial w_{j}} = \frac{1}{n}\sum_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) \, x^{(i)}_{j}
+\frac{\partial \Phi}{\partial w\_{j}} = \frac{1}{n}\sum\_{i=1}^{n} (\hat{p}^{(i)} - y^{(i)}) \, x^{(i)}\_{j}
 $$
 
-where $x^{(i)}_{0} = 1$ (for the intercept) and $j \in \{0, 1, 2\}$.
+where $x^{(i)}\_{0} = 1$ (for the intercept) and $j \in \{0, 1, 2\}$.
 
 ---
 
 ### 7. Summary of the Derivation
 
-1. **Model**: $z = w_{0} + w_{1}x_{1} + w_{2}x_{2}$, $\hat{p} = \sigma(z)$
+1. **Model**: $z = w\_{0} + w\_{1}x\_{1} + w\_{2}x\_{2}$, $\hat{p} = \sigma(z)$
 2. **Loss**: Binary cross-entropy $\ell = -[y\log\hat{p} + (1-y)\log(1-\hat{p})]$
 3. **Key result**: $\partial\ell/\partial z = \hat{p} - y$
-4. **Chain rule**: Apply to each weight using $\partial z/\partial w_j$
-5. **Final gradient**: $\nabla_{\mathbf{w}}\ell = (\hat{p} - y)[1,\,x_{1},\,x_{2}]^{\top}$
+4. **Chain rule**: Apply to each weight using $\partial z/\partial w\_j$
+5. **Final gradient**: $\nabla\_{\mathbf{w}}\ell = (\hat{p} - y)[1,\,x\_{1},\,x\_{2}]^{\top}$
 
-These gradients are used in **gradient descent** (or more advanced optimizers) to iteratively update and learn the optimal parameters $w_{0}, w_{1}, w_{2}$ that minimize the empirical risk.
+These gradients are used in **gradient descent** (or more advanced optimizers) to iteratively update and learn the optimal parameters $w\_{0}, w\_{1}, w\_{2}$ that minimize the empirical risk.
 
 ---
 

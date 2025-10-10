@@ -13,7 +13,14 @@ markdown: kramdown
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+  input: GFM
+  hard_wrap: false
 
 # Enable MathJax
 plugins:
   - jekyll-feed
+
+# Minima theme settings for MathJax
+minima:
+  social_links:
+    - { platform: github, user_url: "https://github.com/mlelarge/ens-ml4sd" }
