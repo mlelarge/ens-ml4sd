@@ -19,8 +19,9 @@ title: "Session 1: Course Overview"
 ### Course Structure
 
 #### Core Curriculum (8 weeks)
+
 | Week | Topic |
-|------|-------|
+| ---- | ----- |
 | 1-2 | Statistics foundations and data representation |
 | 3 | Linear models |
 | 4 | Optimization techniques |
