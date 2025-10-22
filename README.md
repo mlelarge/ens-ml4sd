@@ -21,7 +21,7 @@ Logistic:
 
 - Session 1 - [Course Overview](https://mlelarge.github.io/ens-ml4sd/1_intro) (16/09)
   - Practicals 1 - [K-Means](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_K_Means_empty.ipynb) and [SVD](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_SVD_Eigenfaces_empty.ipynb) (19/09)
-- Session 2 - [Hypothesis Testing](https://mlelarge.github.io/ens-ml4sd/2_hypothesis) (23/09)
+- Session 2 - [Hypothesis Testing](https://mlelarge.github.io/ens-ml4sd/2_hypothesis_test) (23/09)
   - Practicals 2 - [Supervised Learning](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/2_Supervised_Learning_empty.ipynb) (26/09 - 02/10)
 - Session 3 - [Linear Models on Feature Vectors](#session-3-linear-models-on-feature-vectors) (30/09)
   - Practicals 3 - [Bayes' Theorem](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Bayes_empty.ipynb) - [Naive Bayes Binary Classifier](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_NaiveBayes_empty.ipynb) - [Logistic Regression from Scratch](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Logistic_Reg_empty.ipynb) (03/10 - 09/10)
@@ -30,6 +30,10 @@ Logistic:
 - Session 5 - (14/10)
   - Practicals 5 - (17/10 - 23/10)
 - Session rattrapage (21/10)
+- Session vacances - pas cours! (28/10)
+- Session 6 - (4/11)
+- Session 7 - (18/11)
+- Session 8 - (25/11)
 
 ## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) 
 
