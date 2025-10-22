@@ -28,12 +28,12 @@ Logistic:
 - Session 4 - [From Supervised Learning to Optimization](https://mlelarge.github.io/ens-ml4sd/4_optimization) (7/10)
   - Practicals 4 - [PyTorch Tensors 101](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/4_Torch_tensors_empty.ipynb) - [Autograd and Linear Regression](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/4_LinearRegression_empty.ipynb) (10/10 - 16/10)
 - Session 5 - (14/10)
-  - Practicals 5 - (17/10 - 23/10)
+  - Practicals 5 - [Trees and Random Forests](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/5_Trees_RFs_empty.ipynb) (17/10 - 23/10)
 - Session rattrapage (21/10)
 - Session vacances - pas cours! (28/10)
 - Session 6 - (4/11)
 - Session 7 - (18/11)
-- Session 8 - (25/11)
+- Session 8 - (02/12)
 
 ## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) 
 
