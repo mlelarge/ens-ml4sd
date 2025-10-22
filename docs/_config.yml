@@ -7,6 +7,7 @@ theme: minima
 # Navigation
 header_pages:
   - 1_intro.md
+  - 2_hypothesis.md
   - 4_optimization.md
   
 # Math support with kramdown
