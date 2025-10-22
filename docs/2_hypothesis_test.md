@@ -44,7 +44,7 @@ Each year, boys and girls are equally likely to be more numerous (probability = 
 3. Under H₀, the number X of "boy-favored" years follows a Binomial(n, 0.5) distribution
 4. Compute the probability of observing **k or more boy-favored years** using a one-sided binomial test:
 
-$$P(X \geq k) = \sum_{i=k}^{n} {n\choose i} (0.5)^n$$
+$$P(X \geq k) = \sum_{i=k}^{n} \binom{n}{i} (0.5)^n$$
 
 **Interpretation:**  
 - If the p-value is small (typically < 0.05), we reject the null hypothesis and conclude that the observed excess of boys is statistically significant
@@ -149,7 +149,7 @@ Instead of randomly sampling permutations, we can calculate the **exact probabil
 
 Under the null hypothesis of independence, the number of females crossing their right arm on top follows a **hypergeometric distribution**:
 
-$$P(X = k) = \frac{{14 \choose k}{40 \choose 32-k}}{{54 \choose 32}}$$
+$$P(X = k) = \frac{\binom{14}{k}\binom{40}{32-k}}{\binom{54}{32}}$$
 
 where:
 - X = number of females crossing right arm on top
@@ -169,7 +169,7 @@ $$P(\text{two-sided}) = \sum_{k: |d(k)| \geq |d_{\text{obs}}|} P(X = k)$$
 where:
 - $d(k) = \frac{k}{14} - \frac{32-k}{40}$ is the difference in proportions when k females cross right arm on top
 - $d_{\text{obs}} = \frac{9}{14} - \frac{23}{40}$ is the observed difference
-- $P(X = k) = \frac{{14 \choose k}{40 \choose 32-k}}{{54 \choose 32}}$ is the hypergeometric probability
+- $P(X = k) = \frac{\binom{14}{k}\binom{40}{32-k}}{\binom{54}{32}}$ is the hypergeometric probability
 
 ![hypergeom test](hypergeom_test.png)
 
