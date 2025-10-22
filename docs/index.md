@@ -13,7 +13,7 @@ After completing the core curriculum, each department will supervise (over a six
 
 ## Sessions
 - Session 1: [Course Overview](1_intro)
-- Session 2: [Hypothesis Testing](https://docs.google.com/presentation/d/16UhQR2w5g7DwpPop-gBkZxWz5IoyczJqAECMVGs09LQ/edit?usp=sharing)
+- Session 2: [Hypothesis Testing](2_hypothesis)
 - Session 3: [Linear Models on Feature Vectors](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session3_Linear_Models.pdf)
 - Session 4: [Optimization](4_optimization)  
 
