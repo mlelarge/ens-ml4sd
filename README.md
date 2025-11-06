@@ -27,7 +27,7 @@ Logistic:
   - Practicals 3 - [Bayes' Theorem](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Bayes_empty.ipynb) - [Naive Bayes Binary Classifier](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_NaiveBayes_empty.ipynb) - [Logistic Regression from Scratch](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Logistic_Reg_empty.ipynb) (03/10 - 09/10)
 - Session 4 - [From Supervised Learning to Optimization](https://mlelarge.github.io/ens-ml4sd/4_optimization) (7/10)
   - Practicals 4 - [PyTorch Tensors 101](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/4_Torch_tensors_empty.ipynb) - [Autograd and Linear Regression](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/4_LinearRegression_empty.ipynb) (10/10 - 16/10)
-- Session 5 - (14/10)
+- Session 5 - [Supervised Learning Principles](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session_5.1_SL_Principles.pdf) and [Tree-based methods](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session_5.2_Trees_and_ensembling.pdf) (14/10)
   - Practicals 5 - [Trees and Random Forests](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/5_Trees_RFs_empty.ipynb) (17/10 - 23/10)
 - Session rattrapage (21/10)
 - Session vacances - pas cours! (28/10)
