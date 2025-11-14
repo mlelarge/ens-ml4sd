@@ -11,6 +11,7 @@ After completing the core curriculum, each department will supervise (over a six
 Logistic:
 - courses: Tuesday 4pm-6pm in room Camille Marbo (29 rue d'Ulm - U205) (except 30/9 in Galois (Ulm Immeuble Rataud))
 - practicals: Friday 8:30am-10:30am in room Langevin (29 rue d'Ulm) (except 3/10 in Borel) or Thursday (next week) 2:00pm-4:00pm in room 316 (except 2/10 in 3324) in département de biologie (46 rue d'Ulm)
+- for PSL students: [Moodle](https://moodle.psl.eu/course/view.php?id=37291)
 
 **Prerequisites**  
 - Proficiency in Python (see [tutorial](https://cs231n.github.io/python-numpy-tutorial/) for review)  
