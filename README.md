@@ -32,9 +32,11 @@ Logistic:
   - Practicals 5 - [Trees and Random Forests](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/5_Trees_RFs_empty.ipynb) (17/10 - 23/10)
 - Session rattrapage (21/10)
 - Session vacances - pas cours! (28/10)
-- Session 6 - (4/11)
-- Session 7 - (18/11)
-- Session 8 - (02/12)
+- Session 6 - (4/11) [Loss functions for classification](https://dataflowr.github.io/website/modules/3-loss-functions-for-classification/) [Optimization for deep leaning](https://dataflowr.github.io/website/modules/4-optimization-for-deep-learning/) [Stacking layers](https://dataflowr.github.io/website/modules/5-stacking-layers/)
+  - [Convolutional neural network](https://dataflowr.github.io/website/modules/6-convolutional-neural-network/)
+- Session 7 - (18/11) [Dataloading](https://dataflowr.github.io/website/modules/7-dataloading/) [Embedding layers](https://dataflowr.github.io/website/modules/8a-embedding-layers/) [Autoencoders](https://dataflowr.github.io/website/modules/9a-autoencoders/)
+  - [Flows](https://dataflowr.github.io/website/modules/9c-flows/)
+- Session 8 - (02/12) [Recurrent Neural Networks](https://dataflowr.github.io/website/modules/11a-recurrent-neural-networks-theory/) [Attention and Transformers](https://dataflowr.github.io/website/modules/12-attention/)
 
 ## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) 
 
