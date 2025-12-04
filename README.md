@@ -2,7 +2,7 @@
 
 Marc Lelarge and Tony Bonnaire with Julien Moreau
 
-<img src="assets/ChatGPT.png" alt="drawing" width="50%"/>
+<img src="assets/ChatGPT.png" alt="image generated with ChatGPT" width="50%"/> Image created with ChatGPT.
 
 This course introduces the foundations of machine learning, from statistical models to modern deep learning, with a focus on practical applications in scientific research. Students will learn core methods, computational tools, and workflows to apply machine learning techniques to data and problems in their own field of study.
 
