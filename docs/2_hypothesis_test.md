@@ -3,7 +3,7 @@ layout: page
 title: "Session 2: Hypothesis Testing"
 --- 
 
-Slides used for this session are available [here](https://docs.google.com/presentation/d/16UhQR2w5g7DwpPop-gBkZxWz5IoyczJqAECMVGs09LQ/edit?usp=sharing) with links to the Jupyter Notebooks: [Arbuthnot's Sign Test](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/Arbuthnot.ipynb) for section 1, []() for Section 2 and []() for Section 3 below.
+Slides used for this session are available [here](https://docs.google.com/presentation/d/16UhQR2w5g7DwpPop-gBkZxWz5IoyczJqAECMVGs09LQ/edit?usp=sharing) with links to the Jupyter Notebooks: [Arbuthnot's Sign Test](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/Arbuthnot.ipynb) for section 1, []() for Section 2 and []() for Section 3 below.
 
 # 1. A Historical Introduction to Hypothesis Testing: Arbuthnot's Sign Test
 
@@ -49,7 +49,7 @@ $$P(X \geq k) = \sum_{i=k}^{n} \binom{n}{i} (0.5)^n$$
 **Interpretation:**  
 - If the p-value is small (typically < 0.05), we reject the null hypothesis and conclude that the observed excess of boys is statistically significant
 - If the p-value is large, we fail to reject the null hypothesis – the observed pattern could reasonably occur by chance under H₀
-- This generalizes Arbuthnot's original argument to datasets where **some years have more girls than boys** (see [Arbuthnot's Sign Test](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/Arbuthnot.ipynb) for some numerical "simulations")
+- This generalizes Arbuthnot's original argument to datasets where **some years have more girls than boys** (see [Arbuthnot's Sign Test](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/Arbuthnot.ipynb) for some numerical "simulations")
 
 
 ## Understanding Hypotheses in Statistical Science

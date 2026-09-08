@@ -1,4 +1,6 @@
-# ENS course: Machine Learning for Scientific Discovery: From Foundations to Applications
+# ENS course: Machine Learning for Scientific Discovery: From Foundations to Applications (2025)
+
+> Archived 2025 course. For the current course, see [main](https://github.com/mlelarge/ens-ml4sd/tree/main).
 
 Marc Lelarge and Tony Bonnaire with Julien Moreau
 
@@ -22,16 +24,16 @@ Logistic:
 
 ## Table of Contents
 
-- Session 1 - [Course Overview](https://mlelarge.github.io/ens-ml4sd/1_intro) (16/09)
-  - Practicals 1 - [K-Means](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_K_Means_empty.ipynb) and [SVD](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_SVD_Eigenfaces_empty.ipynb) (19/09)
-- Session 2 - [Hypothesis Testing](https://mlelarge.github.io/ens-ml4sd/2_hypothesis_test) (23/09)
-  - Practicals 2 - [Supervised Learning](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/2_Supervised_Learning_empty.ipynb) (26/09 - 02/10)
+- Session 1 - [Course Overview](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/docs/1_intro.md) (16/09)
+  - Practicals 1 - [K-Means](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/1_K_Means_empty.ipynb) and [SVD](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/1_SVD_Eigenfaces_empty.ipynb) (19/09)
+- Session 2 - [Hypothesis Testing](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/docs/2_hypothesis_test.md) (23/09)
+  - Practicals 2 - [Supervised Learning](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/2_Supervised_Learning_empty.ipynb) (26/09 - 02/10)
 - Session 3 - [Linear Models on Feature Vectors](#session-3-linear-models-on-feature-vectors) (30/09)
-  - Practicals 3 - [Bayes' Theorem](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Bayes_empty.ipynb) - [Naive Bayes Binary Classifier](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_NaiveBayes_empty.ipynb) - [Logistic Regression from Scratch](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Logistic_Reg_empty.ipynb) (03/10 - 09/10)
-- Session 4 - [From Supervised Learning to Optimization](https://mlelarge.github.io/ens-ml4sd/4_optimization) (7/10)
-  - Practicals 4 - [PyTorch Tensors 101](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/4_Torch_tensors_empty.ipynb) - [Autograd and Linear Regression](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/4_LinearRegression_empty.ipynb) (10/10 - 16/10)
-- Session 5 - [Supervised Learning Principles](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session_5.1_SL_Principles.pdf) and [Tree-based methods](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session_5.2_Trees_and_ensembling.pdf) (14/10)
-  - Practicals 5 - [Trees and Random Forests](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/5_Trees_RFs_empty.ipynb) (17/10 - 23/10)
+  - Practicals 3 - [Bayes' Theorem](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/3_Bayes_empty.ipynb) - [Naive Bayes Binary Classifier](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/3_NaiveBayes_empty.ipynb) - [Logistic Regression from Scratch](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/3_Logistic_Reg_empty.ipynb) (03/10 - 09/10)
+- Session 4 - [From Supervised Learning to Optimization](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/docs/4_optimization.md) (7/10)
+  - Practicals 4 - [PyTorch Tensors 101](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/4_Torch_tensors_empty.ipynb) - [Autograd and Linear Regression](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/4_LinearRegression_empty.ipynb) (10/10 - 16/10)
+- Session 5 - [Supervised Learning Principles](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/slides/Session_5.1_SL_Principles.pdf) and [Tree-based methods](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/slides/Session_5.2_Trees_and_ensembling.pdf) (14/10)
+  - Practicals 5 - [Trees and Random Forests](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/5_Trees_RFs_empty.ipynb) (17/10 - 23/10)
 - Session rattrapage (21/10)
 - Session vacances - pas cours! (28/10)
 - Session 6 - (4/11) [Loss functions for classification](https://dataflowr.github.io/website/modules/3-loss-functions-for-classification/) [Optimization for deep leaning](https://dataflowr.github.io/website/modules/4-optimization-for-deep-learning/) [Stacking layers](https://dataflowr.github.io/website/modules/5-stacking-layers/)
@@ -39,7 +41,7 @@ Logistic:
 - Session 7 - (18/11) [Dataloading](https://dataflowr.github.io/website/modules/7-dataloading/) [Embedding layers](https://dataflowr.github.io/website/modules/8a-embedding-layers/) [Autoencoders](https://dataflowr.github.io/website/modules/9a-autoencoders/)
   - Practicals 7 - [Flows](https://dataflowr.github.io/website/modules/9c-flows/)
 - Session 8 - (02/12) [Recurrent Neural Networks](https://dataflowr.github.io/website/modules/11a-recurrent-neural-networks-theory/) [Attention and Transformers](https://dataflowr.github.io/website/modules/12-attention/)
-  - Practicals 8 - [Class activation map](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/8_Class_activation_map_empty.ipynb) - [Language modeling](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/8_Language_modeling_empty.ipynb)
+  - Practicals 8 - [Class activation map](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/8_Class_activation_map_empty.ipynb) - [Language modeling](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/notebooks/8_Language_modeling_empty.ipynb)
 
 ## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) 
 
@@ -118,8 +120,8 @@ The first lecture concludes with hands-on exploration of key statistical and mac
 
 ## Session 2: [Hypothesis Testing](https://docs.google.com/presentation/d/16UhQR2w5g7DwpPop-gBkZxWz5IoyczJqAECMVGs09LQ/edit?usp=sharing)
 
-## Session 3: [Linear Models on Feature Vectors](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session3_Linear_Models.pdf)
+## Session 3: [Linear Models on Feature Vectors](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/slides/Session3_Linear_Models.pdf)
 
-## Session 4: [From Supervised Learning to Optimization](https://github.com/mlelarge/ens-ml4sd/blob/main/4_optimization.md)
+## Session 4: [From Supervised Learning to Optimization](https://github.com/mlelarge/ens-ml4sd/blob/year-2025/docs/4_optimization.md)
 
 _Note: This project was build with the help of Claude_
