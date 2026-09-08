@@ -1,4 +1,8 @@
-# ENS course: Machine Learning for Scientific Discovery: From Foundations to Applications
+# ENS course: Machine Learning for Scientific Discovery: From Foundations to Applications (2026)
+
+The 2026 edition is in preparation. The teaching materials below are carried over from 2025 and will be updated as the course is prepared.
+
+The [2025 course archive](https://github.com/mlelarge/ens-ml4sd/tree/year-2025) contains the previous edition, including its schedule and practical solutions.
 
 Marc Lelarge and Tony Bonnaire with Julien Moreau
 
@@ -8,44 +12,39 @@ This course introduces the foundations of machine learning, from statistical mod
 
 After completing the core curriculum, each department will supervise (over a six-week period) the projects it has proposed. The purpose of the core curriculum is to provide a solid foundation in the fundamentals of statistical learning, along with the essential computing skills (sklearn – PyTorch) required across all projects.
 
-**Mandatory registration [here](https://docs.google.com/forms/d/e/1FAIpQLScs--bQWrZO94LsgB5QG2txksC5G6_zuYEnO2uoDwvz5vQazQ/viewform?usp=dialog)**
-
-Logistic:
-- courses: Tuesday 4pm-6pm in room Camille Marbo (29 rue d'Ulm - U205) (except 30/9 in Galois (Ulm Immeuble Rataud))
-- practicals: Friday 8:30am-10:30am in room Langevin (29 rue d'Ulm) (except 3/10 in Borel) or Thursday (next week) 2:00pm-4:00pm in room 316 (except 2/10 in 3324) in département de biologie (46 rue d'Ulm)
-- for PSL students: [Moodle](https://moodle.psl.eu/course/view.php?id=37291)
+Registration, lecture and practical dates, rooms, and the Moodle link for 2026 will be announced here.
 
 **Prerequisites**  
 - Proficiency in Python (see [tutorial](https://cs231n.github.io/python-numpy-tutorial/) for review)  
 - Basic knowledge of calculus and linear algebra  
 - Basic knowledge of probability and statistics  
 
-## Table of Contents
+## Teaching materials
 
-- Session 1 - [Course Overview](https://mlelarge.github.io/ens-ml4sd/1_intro) (16/09)
-  - Practicals 1 - [K-Means](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_K_Means_empty.ipynb) and [SVD](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_SVD_Eigenfaces_empty.ipynb) (19/09)
-- Session 2 - [Hypothesis Testing](https://mlelarge.github.io/ens-ml4sd/2_hypothesis_test) (23/09)
-  - Practicals 2 - [Supervised Learning](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/2_Supervised_Learning_empty.ipynb) (26/09 - 02/10)
-- Session 3 - [Linear Models on Feature Vectors](#session-3-linear-models-on-feature-vectors) (30/09)
-  - Practicals 3 - [Bayes' Theorem](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Bayes_empty.ipynb) - [Naive Bayes Binary Classifier](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_NaiveBayes_empty.ipynb) - [Logistic Regression from Scratch](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Logistic_Reg_empty.ipynb) (03/10 - 09/10)
-- Session 4 - [From Supervised Learning to Optimization](https://mlelarge.github.io/ens-ml4sd/4_optimization) (7/10)
-  - Practicals 4 - [PyTorch Tensors 101](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/4_Torch_tensors_empty.ipynb) - [Autograd and Linear Regression](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/4_LinearRegression_empty.ipynb) (10/10 - 16/10)
-- Session 5 - [Supervised Learning Principles](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session_5.1_SL_Principles.pdf) and [Tree-based methods](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session_5.2_Trees_and_ensembling.pdf) (14/10)
-  - Practicals 5 - [Trees and Random Forests](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/5_Trees_RFs_empty.ipynb) (17/10 - 23/10)
-- Session rattrapage (21/10)
-- Session vacances - pas cours! (28/10)
-- Session 6 - (4/11) [Loss functions for classification](https://dataflowr.github.io/website/modules/3-loss-functions-for-classification/) [Optimization for deep leaning](https://dataflowr.github.io/website/modules/4-optimization-for-deep-learning/) [Stacking layers](https://dataflowr.github.io/website/modules/5-stacking-layers/)
+This list provides the 2025 materials as a starting point. The 2026 schedule will be published here when it is confirmed.
+
+- Session 1 - [Course Overview](https://mlelarge.github.io/ens-ml4sd/1_intro)
+  - Practicals 1 - [K-Means](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_K_Means_empty.ipynb) and [SVD](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_SVD_Eigenfaces_empty.ipynb)
+- Session 2 - [Hypothesis Testing](https://mlelarge.github.io/ens-ml4sd/2_hypothesis_test)
+  - Practicals 2 - [Supervised Learning](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/2_Supervised_Learning_empty.ipynb)
+- Session 3 - [Linear Models on Feature Vectors](#session-3-linear-models-on-feature-vectors)
+  - Practicals 3 - [Bayes' Theorem](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Bayes_empty.ipynb) - [Naive Bayes Binary Classifier](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_NaiveBayes_empty.ipynb) - [Logistic Regression from Scratch](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Logistic_Reg_empty.ipynb)
+- Session 4 - [From Supervised Learning to Optimization](https://mlelarge.github.io/ens-ml4sd/4_optimization)
+  - Practicals 4 - [PyTorch Tensors 101](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/4_Torch_tensors_empty.ipynb) - [Autograd and Linear Regression](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/4_LinearRegression_empty.ipynb)
+- Session 5 - [Supervised Learning Principles](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session_5.1_SL_Principles.pdf) and [Tree-based methods](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session_5.2_Trees_and_ensembling.pdf)
+  - Practicals 5 - [Trees and Random Forests](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/5_Trees_RFs_empty.ipynb)
+- Session 6 - [Loss functions for classification](https://dataflowr.github.io/website/modules/3-loss-functions-for-classification/) [Optimization for deep leaning](https://dataflowr.github.io/website/modules/4-optimization-for-deep-learning/) [Stacking layers](https://dataflowr.github.io/website/modules/5-stacking-layers/)
   - Practicals 6 - [Convolutional neural network](https://dataflowr.github.io/website/modules/6-convolutional-neural-network/)
-- Session 7 - (18/11) [Dataloading](https://dataflowr.github.io/website/modules/7-dataloading/) [Embedding layers](https://dataflowr.github.io/website/modules/8a-embedding-layers/) [Autoencoders](https://dataflowr.github.io/website/modules/9a-autoencoders/)
+- Session 7 - [Dataloading](https://dataflowr.github.io/website/modules/7-dataloading/) [Embedding layers](https://dataflowr.github.io/website/modules/8a-embedding-layers/) [Autoencoders](https://dataflowr.github.io/website/modules/9a-autoencoders/)
   - Practicals 7 - [Flows](https://dataflowr.github.io/website/modules/9c-flows/)
-- Session 8 - (02/12) [Recurrent Neural Networks](https://dataflowr.github.io/website/modules/11a-recurrent-neural-networks-theory/) [Attention and Transformers](https://dataflowr.github.io/website/modules/12-attention/)
+- Session 8 - [Recurrent Neural Networks](https://dataflowr.github.io/website/modules/11a-recurrent-neural-networks-theory/) [Attention and Transformers](https://dataflowr.github.io/website/modules/12-attention/)
   - Practicals 8 - [Class activation map](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/8_Class_activation_map_empty.ipynb) - [Language modeling](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/8_Language_modeling_empty.ipynb)
 
-## Session 1: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) 
+## Session 1: [Course Overview (2025 slides)](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing)
 
 ### About the Course
 
-**Machine Learning for Scientific Discovery** is an 8-week intensive course designed to equip scientists with practical machine learning skills for research applications. The course is taught by Marc Lelarge and Tony Bonnaire at ENS, running from September to November 2025, followed by 6 weeks of supervised research projects.
+The 2025 edition of **Machine Learning for Scientific Discovery** introduced scientists to practical machine learning skills for research applications. Its eight core sessions were followed by six weeks of supervised research projects. The materials below summarize that edition.
 
 
 ### Learning Objectives
@@ -120,6 +119,6 @@ The first lecture concludes with hands-on exploration of key statistical and mac
 
 ## Session 3: [Linear Models on Feature Vectors](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session3_Linear_Models.pdf)
 
-## Session 4: [From Supervised Learning to Optimization](https://github.com/mlelarge/ens-ml4sd/blob/main/4_optimization.md)
+## Session 4: [From Supervised Learning to Optimization](https://github.com/mlelarge/ens-ml4sd/blob/main/docs/4_optimization.md)
 
 _Note: This project was build with the help of Claude_

@@ -3,6 +3,8 @@ layout: page
 title: "Session 1: Course Overview"
 ---
 
+These notes and slides are from the 2025 edition and will be reviewed for 2026. The 2026 schedule and registration details will be announced on the [course homepage](./).
+
 ## Slides: [Machine Learning for Scientific Discovery 2025 - Course Overview](https://docs.google.com/presentation/d/1Z7Zyjx7IS3zy2r7UhZxtVHOWhCIgRvogYnqKTgGGamk/edit?usp=sharing) 
 
 ### About the Course

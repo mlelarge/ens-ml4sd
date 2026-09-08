@@ -1,8 +1,14 @@
 ---
-title: Machine Learning for Scientific Discovery: From Foundations to Applications
+title: "Machine Learning for Scientific Discovery: From Foundations to Applications (2026)"
 
 layout: default
 ---
+## 2026 edition
+
+The 2026 course is in preparation. Registration details, dates, and rooms will be announced here and in the [course repository](https://github.com/mlelarge/ens-ml4sd).
+
+The teaching materials below are carried over from 2025 and will be updated as the course is prepared. The previous edition is available in the [2025 course archive](https://github.com/mlelarge/ens-ml4sd/tree/year-2025).
+
 Marc Lelarge and Tony Bonnaire with Julien Moreau
 
 This course introduces the foundations of machine learning, from statistical models to modern deep learning, with a focus on practical applications in scientific research. Students will learn core methods, computational tools, and workflows to apply machine learning techniques to data and problems in their own field of study.
