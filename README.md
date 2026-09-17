@@ -8,7 +8,7 @@ This course introduces the foundations of machine learning, from statistical mod
 
 The core curriculum builds a foundation in statistical learning and practical skills with scikit-learn and PyTorch. It is followed by six weeks of research projects proposed and supervised by the participating departments.
 
-> **[Register for the course](https://forms.gle/g9EUDz6Wxjf2dW4bA)**
+> **[Register for the course](https://forms.gle/g9EUDz6Wxjf2dW4bA) and on the [Moodle](https://moodle.psl.eu/course/view.php?id=40533)**
 
 ## Schedule
 
@@ -22,7 +22,7 @@ Each session combines a lecture and practical work. Practicals are to be complet
 | October | 6, 13, 20 |
 | November | 3, 10, 17 |
 
-**Final Exam :** January 26-30
+**Final Exam :** January 25-29
 
 ## Prerequisites
 
