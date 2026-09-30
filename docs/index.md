@@ -18,7 +18,7 @@ After completing the core curriculum, each department will supervise (over a six
 [GitHub Repo](https://github.com/mlelarge/ens-ml4sd)
 
 ## Sessions
-- Session 1: [Course Overview](1_intro)
+- Session 1: [Course Overview](1_intro) - [The K-means Algorithm (going further)](1_kmeans)
 - Session 2: [Hypothesis Testing](2_hypothesis_test)
 - Session 3: [Linear Models on Feature Vectors](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session3_Linear_Models.pdf)
 - Session 4: [Optimization](4_optimization)  
