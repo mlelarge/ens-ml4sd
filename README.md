@@ -37,7 +37,7 @@ Each session combines a lecture and practical work. Practicals are to be complet
 | --- | --- | --- |
 | 1 | [Course Overview](https://mlelarge.github.io/ens-ml4sd/1_intro) | [K-Means](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_K_Means_empty.ipynb) · [SVD](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/1_SVD_Eigenfaces_empty.ipynb) |
 | 2 | [Hypothesis Testing](https://mlelarge.github.io/ens-ml4sd/2_hypothesis_test) | [Supervised Learning](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/2_Supervised_Learning_empty.ipynb) |
-| 2 | Linear models: [slides](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session3_Linear_Models.pdf) · [notes](https://github.com/mlelarge/ens-ml4sd/blob/main/docs/3_linearModels.pdf)| [Bayes](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Bayes_empty.ipynb) · [Logistic Regression](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Logistic_Reg_empty.ipynb) · [Naive Bayes](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_NaiveBayes_empty.ipynb)|
+| 3 | Linear models: [slides](https://github.com/mlelarge/ens-ml4sd/blob/main/slides/Session3_Linear_Models.pdf) · [notes](https://github.com/mlelarge/ens-ml4sd/blob/main/docs/3_linearModels.pdf)| [Bayes](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Bayes_empty.ipynb) · [Logistic Regression](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_Logistic_Reg_empty.ipynb) · [Naive Bayes](https://github.com/mlelarge/ens-ml4sd/blob/main/notebooks/3_NaiveBayes_empty.ipynb)|
 
 ## Previous editions
 
